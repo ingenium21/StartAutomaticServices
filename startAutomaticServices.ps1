@@ -42,7 +42,7 @@ if ($services) {
             }
             #$if this is the first or only error set error text
             Else {
-                $strResultError = "Services failed after restart: {0}`n" -f $Service.Displayname 
+                $strFailedRestart= "Services failed after restart: {0}`n" -f $Service.Displayname 
             }
         }
         else {
